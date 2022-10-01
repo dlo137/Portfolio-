@@ -1,0 +1,75 @@
+@font-face{
+    font-family: 'SF-Pro';
+    src: url(./fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
+*{
+    padding: 0;
+    margin: 0; 
+    font-family: 'SF-Pro', sans-serif;
+}
+
+body{
+    background: rgb(241, 241, 241);
+    padding: 4rem 9rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    background: rgb(226, 226, 226);
+    padding: 0.4rem ;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    border-radius: 30px;
+    padding: 0.2rem 1rem;
+
+}
+
+.active {
+    background: white;
+    border-radius: 30px;
+    padding: 0.2rem 1rem;
+
+}
+
+.sun-btn{
+    background: rgb(226, 226, 226);
+    padding: 0.5rem;
+    border-radius: 30px;
+    border: solid black 2px;
+}
+
+
+.contact-btn{
+    background: white;
+    padding: 0.5rem;
+    border-radius: 30px;
+    border: solid black 2px;
+}
+
+
+main{
+    margin-top: 5rem;
+}
+article{
+    background: white;
+    border: red 0.5px solid;
+    padding: 2rem;
+
+}
+
+
+
