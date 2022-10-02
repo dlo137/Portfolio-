@@ -3,12 +3,19 @@
     src: url(./fonts/SFPRODISPLAYREGULAR.OTF);
 }
 
+@font-face{
+    font-family: 'SF-Pro-Bold-Italic';
+    src: url(./fonts/SFPRODISPLAYHEAVYITALIC.OTF);
+}
+
+
 *{
     padding: 0;
     margin: 0; 
     font-family: 'SF-Pro', sans-serif;
 }
 
+/* START OF HEADER */
 body{
     background: rgb(241, 241, 241);
     padding: 4rem 9rem;
@@ -45,31 +52,114 @@ li{
 
 }
 
-.sun-btn{
+.toggle-btn{
     background: rgb(226, 226, 226);
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 30px;
-    border: solid black 2px;
+    font-size: 16px;
 }
 
 
-.contact-btn{
+
+.contact-container{
+    justify-content: center;
+    background: linear-gradient(to right, #ff7857, #ffcc72);
+    padding: 0.22rem;
+    border-radius: 30px;
+    width: 6rem;
+    height: auto;
+}
+
+.contact-box{
+    justify-content: center;
+    font-size: 18px;
     background: white;
-    padding: 0.5rem;
     border-radius: 30px;
-    border: solid black 2px;
-}
+    padding: 0.4rem 1rem;
+    width: 4rem;
+    height: auto;
 
+} 
+
+/* END OF HEADER */
+
+/* GRID STYLING */
 
 main{
     margin-top: 5rem;
+    
 }
+
+.grid-container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 145vh;
+    width: auto;
+}
+
+
+.grid-col-span-2{
+    grid-column: span 2;
+}
+
+.grid-row-span-2{
+    grid-row: span 2;
+}
+
 article{
     background: white;
-    border: red 0.5px solid;
-    padding: 2rem;
-
+    padding: 2.5rem;
+    border-radius: 30px;
 }
 
+/* About Section */
+
+.avatar{
+    height: 17rem;
+}
+
+.about-section h1{
+    font-family: 'SF-Pro-Bold-Italic', sans-serif;
+    font-size: 64px;
+    background: -webkit-linear-gradient(right, #ff7857, #ffcc72);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-section p{
+    width: 700px;
+    font-size: 29px;
+    margin-top: 1.5rem;
+}
+
+.gradient{
+    font-family: 'SF-Pro-Bold-Italic', sans-serif;
+    background: -webkit-linear-gradient(right,  #ff7857, #ffcc72);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.grid-container .about-section .contact-container{
+    margin-top: 2rem;
+}
+
+/* Map Section */
+
+.map{
+    padding: 0;
+    border-radius: 30px;
+}
+
+.map-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    
+}
+
+/* Github Section */
 
 
