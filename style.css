@@ -12,9 +12,6 @@
     src: url(./fonts/SFPRODISPLAYBOLD.OTF);
 }
 
-:root{
-    --h2-fontsize: 28px;
-}
 
 
 *{
@@ -23,10 +20,13 @@
     font-family: 'SF-Pro', sans-serif;
 }
 
+
 /* START OF HEADER */
 body{
+    height: 100%;
+    width: auto;
     background: rgb(241, 241, 241);
-    padding: 4rem 9rem;
+    padding: 3rem 9rem;
 }
 
 header{
@@ -37,9 +37,9 @@ header{
 
 nav{
     background: rgb(226, 226, 226);
-    padding: 0.4rem ;
+    padding: 0.3rem ;
     border-radius: 30px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 ul{
@@ -61,13 +61,17 @@ li{
 }
 
 .toggle-btn{
+    display: flex;
     background: rgb(226, 226, 226);
     padding: 0.5rem 1rem;
     border-radius: 30px;
-    font-size: 16px;
+    gap: 1rem;
 }
 
-
+i{
+    position: relative;
+    cursor: pointer;
+}
 
 .contact-container{
     justify-content: center;
@@ -83,7 +87,7 @@ li{
     font-size: 18px;
     background: white;
     border-radius: 30px;
-    padding: 0.4rem 1rem;
+    padding: 0.3rem 1rem;
     width: 4rem;
     height: auto;
 
@@ -94,7 +98,16 @@ li{
 /* GRID STYLING */
 
 main{
-    margin-top: 5rem;
+    margin-top: 3rem;
+    height: 100%;
+    width: auto;
+    padding-bottom: 23rem;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
     
 }
 
@@ -102,9 +115,9 @@ main{
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 24% 24% 24% 24% 24%;
     height: 145vh;
-    width: auto;
+    width: 100%; 
 }
 
 
@@ -124,26 +137,27 @@ article{
 
 /* About Section */
 
+
 .avatar{
-    height: 16rem;
+    margin-top: -2rem;
+    height: 12rem;
 }
 
 .about-section h2{
-    font-size: var(--h2-fontsize);
+    font-size: 28px;
 }
 
 .about-section h1{
     font-family: 'SF-Pro-Bold', sans-serif;
-    font-size: 64px;
+    font-size: 48px;
     background: -webkit-linear-gradient(right, #ff7857, #ffcc72);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .about-section p{
-    width: 700px;
-    font-size: 28px;
-    margin-top: 1.5rem;
+    font-size: 22px;
+    margin-top: 2rem;
 }
 
 .gradient{
@@ -172,28 +186,29 @@ article{
     
 }
 
-/* Gallery Section */
-
-
 /* Learning Path Section */
+
 
 .learning-path h2{
     display: flex;
     justify-content: center;
-    font-size: 38px;
+    font-size: 32px;
     margin-bottom: 2.5rem;
 }
 
 .learning-blocks, .skills{
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 14px;
     gap: 1rem;
+
+
 }
 
 .learning-blocks-container{
     border-bottom: gray solid 1px;
     margin-bottom: 1rem;
+
 }
 
 
@@ -207,14 +222,14 @@ article{
 }
 
 .completed{
-    font-size: 14px;
+    font-size: 10px;
     color: gray;
-    margin: 1rem 0rem 1rem 3.7rem;
+    margin: 0rem 0rem 1rem 3.2rem;
 }
 
 /*Admin Section */
 
-.admin{
+.projects{
     padding: 0;
 }
 
@@ -223,7 +238,20 @@ article{
 .languages h2{
     display: flex;
     justify-content: center;
-    font-size: 38px;
+    font-size: 32px;
     margin-bottom: 2.5rem;
+}
+
+.skills{
+    border-bottom: gray solid 1px;
+    width: auto;
+    height: 4rem;
+}
+
+/*github section */
+
+.github{
+    padding: 0;
+    border-radius: 30px;
 }
 
