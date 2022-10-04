@@ -26,8 +26,8 @@
                 </ul>
             </nav>
 
-            <div class="contact-container">
-                <div class="contact-box">
+            <div class="contact-container" id="contact-container">
+                <div class="contact-box" id="contact-box">
                     Contact
                 </div>
             </div>
@@ -36,7 +36,7 @@
         <main>
             
             <div class="grid-container">
-                <article class="about-section grid-col-span-2 grid-row-span-2">
+                <article class="about-section grid-col-span-2 grid-row-span-2" data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
                     <img src="./imgs/avatar.png" alt="Apple Avatar" class="avatar">
 
                     <h2>
@@ -60,15 +60,15 @@
 
                 </article>
 
-                <article class="map grid-col-span-2">
+                <article class="map grid-col-span-2"  data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
                     <img class="img" id='map-img' src="./imgs/map.png" alt="apple map w/ avatar emoji">
                 </article>
 
-                <article class="github">
-                    <img class="img" id='github-img'src="./imgs/github.png" alt="">
+                <article class="github"  data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
+                    <a href="https://github.com/dlo137?tab=repositories "  target=”_blank”><img class="img" id='github-img'src="./imgs/github.png" alt=""></a>
                 </article>
 
-                <article class="learning-path grid-row-span-2 ">
+                <article class="learning-path grid-row-span-2 "  data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
                     <h2>Learning Path</h2>
 
                     <div class="learning-blocks-container">  
@@ -140,7 +140,7 @@
                     </div>
                 </article>
 
-                <article class="languages grid-row-span-2 ">
+                <article class="languages grid-row-span-2 "  data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
                     <h2>Skills/Languages</h2>
                     
                     <div class="skills_languages_section">  
@@ -176,28 +176,23 @@
                     </div>
                 </article>
 
-                <article class="projects sneakers grid-col-span-2">
+                <article class="sneakers projects grid-col-span-2" data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
                     <img class ="img"  src="./imgs/ecommerce_site.png" alt="">
                 </article>
 
-                <article class="projects ">
-                    <img class="img" id="linkedin-img" src="./imgs/linkedin.png" alt="">
+                <article class="projects"  data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
+                    <a href="https://www.linkedin.com/in/dangelo-watson-474ab8166/" target="_blank"><img class="img" id="linkedin-img" src="./imgs/linkedin.png" alt=""></a>
                 </article>
 
-                <article class="projects admin grid-col-span-2">
-                    <img class ="img" id="tasty-img"  src="./imgs/tasty.png" alt="">
+                <article class="tasty projects admin grid-col-span-2" data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
+                    <img class ="img" id="admin-img" src="./imgs/admin_white.png" alt="">
                 </article>
 
-                <article class="projects  grid-col-span-2">
-                    <img class ="img" id="admin-img" src="./imgs/admin_dark.png" alt="">
+                <article class="admin projects  grid-col-span-2" data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
+                    <img class ="img" id="tasty-img"  src="./imgs/tasty_white.png" alt="">
                 </article>
 
-                <article class="projects">
-                    <img class ="img"   src="./imgs/spotify.png" alt="">
-                </article>
-
-                <article class="projects">
-                    <img class ="img"   src="./imgs/arrow.png" alt="">
+                <article class="projects grid-col-span-2""  data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
                 </article>
             </div>
 
@@ -205,5 +200,6 @@
 
         
         <script src="main.js" async defer></script>
+        <script src="vanilla-tilt.min.js"  async defer></script>
     </body>
 </html>

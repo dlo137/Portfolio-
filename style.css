@@ -20,6 +20,9 @@
     font-family: 'SF-Pro', sans-serif;
 }
 
+.js-tilt-glare{
+    border-radius: 30px;
+}
 
 /* START OF HEADER */
 body{
@@ -132,8 +135,6 @@ li{
     color: white;
 }
 
-.dark #map-img{
-}
 
 
 
@@ -147,7 +148,26 @@ li{
     border-radius: 30px;
     width: 7rem;
     height: 2.2rem;
+    cursor: pointer;
 }
+
+.grid-container .contact-container:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.5rem;
+    height: 2.8rem;
+    padding: .3rem;
+    transition: ease 0.3s  ;
+}
+
+.grid-container .contact-box:hover{
+    width: 7.5rem;
+    height: 2.8rem;
+    transition: ease 0.3s  ;
+
+}
+
 
 .contact-box{
     display: flex;
@@ -254,6 +274,8 @@ article{
     
 }
 
+
+
 /* Learning Path Section */
 
 
@@ -299,7 +321,9 @@ article{
 
 .projects{
     padding: 0;
+    cursor: pointer;
 }
+
 
 /*Languages Section */
 

@@ -21,16 +21,16 @@ switchElement.addEventListener('click', () =>{
         githubImg.src = 'imgs/github.png';
         linkedImg.src = 'imgs/linkedin.png';
         gitImg.src = 'imgs/git.png';
-        adminImg.src = 'imgs/admin_dark.png';
-        tastyImg.src = 'imgs/tasty.png';
+        adminImg.src = 'imgs/admin_white.png';
+        tastyImg.src = 'imgs/tasty_white.png';
 
     }else{
         mapImg.src = 'imgs/map_dark.png';
         githubImg.src = 'imgs/github_white.png';
         linkedImg.src = 'imgs/linkedin_white.png';
         gitImg.src = 'imgs/git_white.png';
-        //adminImg.src = 'imgs/admin_white.png';
-        //tastyImg.src = 'imgs/tasty_white.png';
+        adminImg.src = 'imgs/admin_dark.png';
+        tastyImg.src = 'imgs/tasty.png';
 
     }
         
