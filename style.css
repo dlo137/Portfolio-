@@ -23,10 +23,11 @@
 
 /* START OF HEADER */
 body{
-    height: 100%;
+    min-height: 100vh;
     width: auto;
     background: rgb(241, 241, 241);
-    padding: 3rem 9rem;
+    padding: 4rem 9rem;
+    transition: .5s;
 }
 
 header{
@@ -36,10 +37,15 @@ header{
 }
 
 nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 2rem;
+    width: 28rem;
     background: rgb(226, 226, 226);
     padding: 0.3rem ;
     border-radius: 30px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 ul{
@@ -60,36 +66,98 @@ li{
 
 }
 
-.toggle-btn{
-    display: flex;
+.switch{
+    width: 80px;
+    height: 40px;
     background: rgb(226, 226, 226);
-    padding: 0.5rem 1rem;
     border-radius: 30px;
-    gap: 1rem;
+    position: relative;
 }
 
-i{
-    position: relative;
+.flicker{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 
+        inset 4px 4px 4px rgb(255, 255, 255),
+        inset -4px -4px 4px rgb(195 193 198 / 90%);
+}
+
+
+.moon{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0  rgb(114, 114, 114);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+/* dark section */
+.dark{
+    background-color: rgb(24, 24, 24);
+    transition: .5s;
+}
+
+
+.dark .flicker{
+    z-index: 1;
+    transform: translateX(40px);
     cursor: pointer;
 }
 
+.dark nav{
+    color: white;
+    background: rgb(0, 0, 0);
+}
+
+.dark nav .active{
+    background: rgb(34, 34, 34);
+    color: white;
+}
+.dark article{
+    background: rgb(34, 34, 34);
+    color: white;
+}
+
+.dark .contact-box{
+    background: rgb(34, 34, 34);
+    color: white;
+}
+
+.dark #map-img{
+}
+
+
+
+
+
 .contact-container{
+    display: flex;
     justify-content: center;
     background: linear-gradient(to right, #ff7857, #ffcc72);
-    padding: 0.22rem;
+    padding: .3rem;
     border-radius: 30px;
-    width: 6rem;
-    height: auto;
+    width: 7rem;
+    height: 2.2rem;
 }
 
 .contact-box{
+    display: flex;
     justify-content: center;
-    font-size: 18px;
+    align-items: center;
+    font-size: 22px;
     background: white;
     border-radius: 30px;
-    padding: 0.3rem 1rem;
-    width: 4rem;
-    height: auto;
+    width: 7rem;
+    height: 2.2rem;
 
 } 
 
@@ -98,7 +166,7 @@ i{
 /* GRID STYLING */
 
 main{
-    margin-top: 3rem;
+    padding-top: 4rem;
     height: 100%;
     width: auto;
     padding-bottom: 23rem;
@@ -135,12 +203,12 @@ article{
     border-radius: 30px;
 }
 
+
 /* About Section */
 
 
 .avatar{
-    margin-top: -2rem;
-    height: 12rem;
+    height: 15rem;
 }
 
 .about-section h2{
@@ -149,14 +217,14 @@ article{
 
 .about-section h1{
     font-family: 'SF-Pro-Bold', sans-serif;
-    font-size: 48px;
+    font-size: 62px;
     background: -webkit-linear-gradient(right, #ff7857, #ffcc72);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .about-section p{
-    font-size: 22px;
+    font-size: 28px;
     margin-top: 2rem;
 }
 
@@ -199,7 +267,7 @@ article{
 .learning-blocks, .skills{
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 20px;
     gap: 1rem;
 
 
@@ -222,9 +290,9 @@ article{
 }
 
 .completed{
-    font-size: 10px;
+    font-size: 14px;
     color: gray;
-    margin: 0rem 0rem 1rem 3.2rem;
+    margin: 2rem 0rem 1.5rem 3.2rem;
 }
 
 /*Admin Section */
@@ -245,7 +313,7 @@ article{
 .skills{
     border-bottom: gray solid 1px;
     width: auto;
-    height: 4rem;
+    height: 5.5rem;
 }
 
 /*github section */

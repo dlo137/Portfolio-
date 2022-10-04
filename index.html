@@ -7,13 +7,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    </head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
     <body>
         <header>
-            <div class="toggle-btn">
-                <i class='bx bx-sun' id="toggle-dark"></i>
-                <i class='bx bxs-moon'></i>
+            <div class="switch">
+                <div class="flicker"></div>
+                <div class="moon"></div>
+
             </div>
             
             <nav>
@@ -61,11 +61,11 @@
                 </article>
 
                 <article class="map grid-col-span-2">
-                    <img class="img" src="./imgs/map.png" alt="apple map w/ avatar emoji">
+                    <img class="img" id='map-img' src="./imgs/map.png" alt="apple map w/ avatar emoji">
                 </article>
 
                 <article class="github">
-                    <img class="img" src="./imgs/github.png" alt="">
+                    <img class="img" id='github-img'src="./imgs/github.png" alt="">
                 </article>
 
                 <article class="learning-path grid-row-span-2 ">
@@ -170,7 +170,7 @@
                         </div>
 
                         <div class="skills" id="last-child">
-                            <img class="logos" src="./imgs/git.png" alt="" width="35" height="35">
+                            <img class="logos" id="git-img" src="./imgs/git.png" alt="" width="35" height="35">
                             <p>Git</p>
                         </div>
                     </div>
@@ -181,15 +181,15 @@
                 </article>
 
                 <article class="projects ">
-                    <img class="img" src="./imgs/linkedin.png" alt="">
+                    <img class="img" id="linkedin-img" src="./imgs/linkedin.png" alt="">
                 </article>
 
                 <article class="projects admin grid-col-span-2">
-                    <img class ="img"   src="./imgs/tasty.png" alt="">
+                    <img class ="img" id="tasty-img"  src="./imgs/tasty.png" alt="">
                 </article>
 
                 <article class="projects  grid-col-span-2">
-                    <img class ="img"   src="./imgs/admin dark.png" alt="">
+                    <img class ="img" id="admin-img" src="./imgs/admin_dark.png" alt="">
                 </article>
 
                 <article class="projects">
@@ -204,6 +204,6 @@
         </main>
 
         
-        <script src="" async defer></script>
+        <script src="main.js" async defer></script>
     </body>
 </html>
