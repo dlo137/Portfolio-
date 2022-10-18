@@ -17,12 +17,10 @@
             </div>
             
             <nav>
-                <ul>
-                    <li>All</li>
-                    <li>About</li>
-                    <li class="nav-btn active">Projects</li>
-                    <li>Media</li>
-                    <li>Running</li>
+                <ul class=" tabs">
+                    <li class="tab active"> <a data-switcher data-tab="1">All </a></li>
+                    <li class="tab"> <a data-switcher data-tab="2">Projects</a></li>
+                    <li class="tab"> <a data-switcher data-tab="3">Contact</a></li>
                 </ul>
             </nav>
 
@@ -33,170 +31,208 @@
             </div>
         </header>
 
-        <main>
-            
-            <div class="grid-container">
-                <article class="about-section grid-col-span-2 grid-row-span-2" data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
-                    <img src="./imgs/avatar.png" alt="Apple Avatar" class="avatar">
-
-                    <h2>
-                        Hello! My Name is...
-                    </h2>
-
-                    <h1>D'ANGELO WATSON</h1>
-
-                    <p>
-                        I'm a self taught front-end developer in the United States,
-                        and I'm <span class="gradient">10 months</span> into my software engineering journey. If you're hiring
-                        a junior front-end developer or need a website built, let's get in touch!
-
-                    </p>
-
-                    <div class="contact-container">
-                        <div class="contact-box about">
-                            Contact
-                        </div>
+        <main>   
+            <section class="pages">
+                <div class="page active" data-page="1">
+                    <div class="grid-container">
+                        <article class="about-section grid-col-span-2 grid-row-span-2" data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
+                            <img src="./imgs/avatar.png" alt="Apple Avatar" class="avatar">
+        
+                            <h2>
+                                Hello! My Name is...
+                            </h2>
+        
+                            <h1>D'ANGELO WATSON</h1>
+        
+                            <p>
+                                I'm a software engineer based in the United States,
+                                with over <span class="gradient">1 year</span> of engineering experience. I began 
+                                as a self taught developer, but now studying a <span class="gradient">Bachelor of Science</span> in
+                                Full Stack Development at ASU University. Need a dedicated Jr. Developer or even just a website?
+                                Let's get in touch! 
+                           </p>
+        
+                            <div class="contact-container">
+                                <div class="contact-box about">
+                                    Contact
+                                </div>
+                            </div>
+        
+                        </article>
+        
+                        <article class="map grid-col-span-2"  data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
+                            <img class="img" id='map-img' src="./imgs/map.png" alt="apple map w/ avatar emoji">
+                        </article>
+        
+                        <article class="github"  data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
+                            <a href="https://github.com/dlo137?tab=repositories "  target=”_blank”><img class="img" id='github-img'src="./imgs/github.png" alt=""></a>
+                        </article>
+        
+                        <article class="learning-path grid-row-span-2 "  data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
+                            <h2>Learning Path</h2>
+        
+                            <div class="learning-blocks-container">  
+                                <div class="learning-blocks">
+                                    <div class="logos">
+                                        <img class="logos" src="./imgs/html_logo.png" alt="" width="35" height="35">
+                                        <img class="logos" src="./imgs/css_logo.png" alt="" width="35" height="35">       
+                                    </div>
+        
+                                    <div class="learning-text">
+                                        <p>Build Responsive <br> Websites with HTML<br> and CSS</p>
+                                    </div>
+                                </div>
+        
+                                <div class="completed">
+                                    COMPLETED
+                                </div> 
+                            </div>
+        
+        
+                            <div class="learning-blocks-container">  
+                                <div class="learning-blocks">
+                                    <div class="logos">
+                                        <img class="logos" src="./imgs/js_logo.png" alt="" width="35" height="35">
+                                    </div>
+        
+                                    <div class="learning-text">
+                                        <p>Fundamentals of Javascript</p>
+                                    </div>
+                                </div>
+        
+                                <div class="completed">
+                                    COMPLETED
+                                </div> 
+                            </div>
+        
+                            <div class="learning-blocks-container">  
+                                <div class="learning-blocks">
+                                    <div class="logos">
+                                        <img class="logos" src="./imgs/the_odin_project.png" alt="" width="35" height="35">
+                                    </div>
+        
+                                    <div class="learning-text">
+                                        <p>The Odin Project</p>
+                                    </div>
+                                </div>
+        
+                                <div class="completed">
+                                    COMPLETED
+                                </div> 
+                            </div>
+        
+        
+                            <div class="learning-blocks-container" id="last-child">  
+                                <div class="learning-blocks">
+                                    <div class="logos">
+                                        <img src="./imgs/native_react.png" alt="" width="35" height="35">
+                                        <img class="logos" src="./imgs/three.js" alt="" width="35" height="35">
+                                    </div>
+        
+                                    <div class="learning-text">
+                                        <p>React and fundamentals of Three.JS</p>
+                                    </div>
+                                </div>
+        
+                                <div class="completed">
+                                    COMPLETED
+                                </div> 
+                            </div>
+                        </article>
+        
+                        <article class="languages grid-row-span-2 "  data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
+                            <h2>Skills/Languages</h2>
+                            
+                            <div class="skills_languages_section">  
+                                <div class="skills">
+                                    <img class="logos" src="./imgs/html_logo.png" alt="" width="35" height="35">
+                                    <p>HTML</p> 
+                                </div>
+        
+                                <div class="skills">
+                                    <img class="logos" src="./imgs/css_logo.png" alt="" width="35" height="35">
+                                    <p>CSS</p>
+                                </div>
+        
+                                <div class="skills">
+                                    <img class="logos" src="./imgs/js_logo.png" alt="" width="35" height="35">
+                                    <p>Javascript</p>
+                                </div>
+        
+                                <div class="skills">
+                                    <img class="logos" src="./imgs/native_react.png" alt="" width="35" height="35">
+                                    <p>React</p>
+                                </div>
+        
+                                <div class="skills">
+                                    <img class="logos" src="./imgs/three.js" alt="" width="35" height="35">
+                                    <p>Three.JS</p>
+                                </div>
+        
+                                <div class="skills" id="last-child">
+                                    <img class="logos" id="git-img" src="./imgs/git.png" alt="" width="35" height="35">
+                                    <p>Git</p>
+                                </div>
+                            </div>
+                        </article>
+        
+                        <article class="sneakers projects grid-col-span-2" data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
+                            <img class ="img"  src="./imgs/ecommerce_site.png" alt="">
+                        </article>
+        
+                        <article class="projects"  data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
+                            <a href="https://www.linkedin.com/in/dangelo-watson-474ab8166/" target="_blank"><img class="img" id="linkedin-img" src="./imgs/linkedin.png" alt=""></a>
+                        </article>
+        
+                        <article class="tasty projects admin grid-col-span-2" data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
+                            <img class ="img" id="admin-img" src="./imgs/admin_dark.png" alt="">
+                        </article>
+        
+                        <article class="admin projects  grid-col-span-2" data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
+                            <img class ="img" id="tasty-img"  src="./imgs/tasty.png" alt="">
+                        </article>
+        
+                        <article class="projects grid-col-span-2"  data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
+                        </article>
                     </div>
+                </div>
 
-                </article>
+                <div class="page" id="project-page" data-page="2">
+                    <div class="grid-container-projects">
 
-                <article class="map grid-col-span-2"  data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
-                    <img class="img" id='map-img' src="./imgs/map.png" alt="apple map w/ avatar emoji">
-                </article>
+                        <article class="github"  data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
+                            <a href="https://github.com/dlo137?tab=repositories "  target=”_blank”><img class="img" id='github-img'src="./imgs/github.png" alt=""></a>
+                        </article>
+             
+        
+                        <article class="sneakers projects grid-col-span-2" data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
+                            <img class ="img"  src="./imgs/ecommerce_site.png" alt="">
+                        </article>
 
-                <article class="github"  data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
-                    <a href="https://github.com/dlo137?tab=repositories "  target=”_blank”><img class="img" id='github-img'src="./imgs/github.png" alt=""></a>
-                </article>
+                        <article class="projects"  data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
+                            <a href="https://www.linkedin.com/in/dangelo-watson-474ab8166/" target="_blank"><img class="img" id="linkedin-img" src="./imgs/linkedin.png" alt=""></a>
+                        </article>
+        
+        
+                        <article class="tasty projects admin grid-col-span-2" data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
+                            <img class ="img" id="admin-img" src="./imgs/admin_dark.png" alt="">
+                        </article>
+        
+                        <article class="admin projects  grid-col-span-2" data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
+                            <img class ="img" id="tasty-img"  src="./imgs/tasty.png" alt="">
+                        </article>
 
-                <article class="learning-path grid-row-span-2 "  data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
-                    <h2>Learning Path</h2>
-
-                    <div class="learning-blocks-container">  
-                        <div class="learning-blocks">
-                            <div class="logos">
-                                <img class="logos" src="./imgs/html_logo.png" alt="" width="35" height="35">
-                                <img class="logos" src="./imgs/css_logo.png" alt="" width="35" height="35">       
-                            </div>
-
-                            <div class="learning-text">
-                                <p>Build Responsive <br> Websites with HTML<br> and CSS</p>
-                            </div>
-                        </div>
-
-                        <div class="completed">
-                            COMPLETED
-                        </div> 
                     </div>
+                </div>
 
-
-                    <div class="learning-blocks-container">  
-                        <div class="learning-blocks">
-                            <div class="logos">
-                                <img class="logos" src="./imgs/js_logo.png" alt="" width="35" height="35">
-                            </div>
-
-                            <div class="learning-text">
-                                <p>Fundamentals of Javascript</p>
-                            </div>
-                        </div>
-
-                        <div class="completed">
-                            COMPLETED
-                        </div> 
+                <div class="page" id="contact-page" data-page="3">
+                    <div class="grid-container-contact">
+                        
                     </div>
-
-                    <div class="learning-blocks-container">  
-                        <div class="learning-blocks">
-                            <div class="logos">
-                                <img class="logos" src="./imgs/the_odin_project.png" alt="" width="35" height="35">
-                            </div>
-
-                            <div class="learning-text">
-                                <p>The Odin Project</p>
-                            </div>
-                        </div>
-
-                        <div class="completed">
-                            COMPLETED
-                        </div> 
-                    </div>
-
-
-                    <div class="learning-blocks-container" id="last-child">  
-                        <div class="learning-blocks">
-                            <div class="logos">
-                                <img src="./imgs/native_react.png" alt="" width="35" height="35">
-                                <img class="logos" src="./imgs/three.js" alt="" width="35" height="35">
-                            </div>
-
-                            <div class="learning-text">
-                                <p>React for beginners and fundamentals of Three.JS</p>
-                            </div>
-                        </div>
-
-                        <div class="completed">
-                            COMPLETED
-                        </div> 
-                    </div>
-                </article>
-
-                <article class="languages grid-row-span-2 "  data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
-                    <h2>Skills/Languages</h2>
-                    
-                    <div class="skills_languages_section">  
-                        <div class="skills">
-                            <img class="logos" src="./imgs/html_logo.png" alt="" width="35" height="35">
-                            <p>HTML</p> 
-                        </div>
-
-                        <div class="skills">
-                            <img class="logos" src="./imgs/css_logo.png" alt="" width="35" height="35">
-                            <p>CSS</p>
-                        </div>
-
-                        <div class="skills">
-                            <img class="logos" src="./imgs/js_logo.png" alt="" width="35" height="35">
-                            <p>Javascript</p>
-                        </div>
-
-                        <div class="skills">
-                            <img class="logos" src="./imgs/native_react.png" alt="" width="35" height="35">
-                            <p>React</p>
-                        </div>
-
-                        <div class="skills">
-                            <img class="logos" src="./imgs/three.js" alt="" width="35" height="35">
-                            <p>Three.JS</p>
-                        </div>
-
-                        <div class="skills" id="last-child">
-                            <img class="logos" id="git-img" src="./imgs/git.png" alt="" width="35" height="35">
-                            <p>Git</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="sneakers projects grid-col-span-2" data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
-                    <img class ="img"  src="./imgs/ecommerce_site.png" alt="">
-                </article>
-
-                <article class="projects"  data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
-                    <a href="https://www.linkedin.com/in/dangelo-watson-474ab8166/" target="_blank"><img class="img" id="linkedin-img" src="./imgs/linkedin.png" alt=""></a>
-                </article>
-
-                <article class="tasty projects admin grid-col-span-2" data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
-                    <img class ="img" id="admin-img" src="./imgs/admin_white.png" alt="">
-                </article>
-
-                <article class="admin projects  grid-col-span-2" data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
-                    <img class ="img" id="tasty-img"  src="./imgs/tasty_white.png" alt="">
-                </article>
-
-                <article class="projects grid-col-span-2""  data-tilt data-tilt-reverse="true"  data-tilt-max="5.5"  data-tilt-glare data-tilt-max-glare="0.2" >
-                </article>
-            </div>
-
+                </div>           
+            </section> 
         </main>
+
 
         
         <script src="main.js" async defer></script>

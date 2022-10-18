@@ -10,6 +10,7 @@ let adminImg = document.querySelector('#admin-img');
 
 let toggle = true;
 
+//when clicking toggle-button
 switchElement.addEventListener('click', () =>{
     //toggles dark mode
     document.body.classList.toggle('dark');
@@ -21,20 +22,40 @@ switchElement.addEventListener('click', () =>{
         githubImg.src = 'imgs/github.png';
         linkedImg.src = 'imgs/linkedin.png';
         gitImg.src = 'imgs/git.png';
-        adminImg.src = 'imgs/admin_white.png';
-        tastyImg.src = 'imgs/tasty_white.png';
-
     }else{
         mapImg.src = 'imgs/map_dark.png';
         githubImg.src = 'imgs/github_white.png';
         linkedImg.src = 'imgs/linkedin_white.png';
         gitImg.src = 'imgs/git_white.png';
-        adminImg.src = 'imgs/admin_dark.png';
-        tastyImg.src = 'imgs/tasty.png';
-
     }
-        
 })
 
+
+window.onload = () => {
+    const tab_switchers = document.querySelectorAll('[data-switcher');
+
+    for (let i = 0; i < tab_switchers.length; i++) {
+        const tab_switcher = tab_switchers[i];
+        const page_id = tab_switcher.dataset.tab;
+
+        tab_switcher.addEventListener('click', () => {
+            document.querySelector('.tabs .tab.active').classList.remove('active');
+            tab_switcher.parentNode.classList.add('active');
+
+            Switchpage(page_id);
+        });
+
+    }
+
+}
+
+function Switchpage (page_id){
+    const current_page = document.querySelector('.pages .page.active');
+    current_page.classList.remove('active');
+
+    const next_page = document.querySelector(`.pages .page[data-page="${page_id}"]`)
+    next_page.classList.add('active');
+
+}
 
 

@@ -24,9 +24,10 @@
     border-radius: 30px;
 }
 
-/* START OF HEADER */
+/*================================== HEADER SECTON ==================================*/
+
 body{
-    min-height: 100vh;
+    height: 100%;
     width: auto;
     background: rgb(241, 241, 241);
     padding: 4rem 9rem;
@@ -51,6 +52,16 @@ nav{
     font-size: 20px;
 }
 
+header nav .tabs .tab a[data-switcher]{
+    cursor: pointer;
+}
+
+header nav .tabs .tab.active a[data-switcher]{
+    background: white;
+    border-radius: 30px;
+    padding: 0.2rem 1rem;
+}
+
 ul{
     display: flex;
     list-style: none;
@@ -58,15 +69,7 @@ ul{
 
 li{
     border-radius: 30px;
-    padding: 0.2rem 1rem;
-
-}
-
-.active {
-    background: white;
-    border-radius: 30px;
-    padding: 0.2rem 1rem;
-
+    padding: 0.2rem 1rem;  
 }
 
 .switch{
@@ -136,10 +139,20 @@ li{
 }
 
 
+.dark header nav .tabs .tab.active a[data-switcher]{
+    background: rgb(34, 34, 34);
+    border-radius: 30px;
+    padding: 0.2rem 1rem;
+}
 
 
+.pages .page{
+    display: none;
+}
 
-
+.pages .page.active{
+    display: block;
+}
 .contact-container{
     display: flex;
     justify-content: center;
@@ -162,10 +175,7 @@ li{
 }
 
 .grid-container .contact-box:hover{
-    width: 7.5rem;
-    height: 2.8rem;
     transition: ease 0.3s  ;
-
 }
 
 
@@ -183,13 +193,15 @@ li{
 
 /* END OF HEADER */
 
+/*================================== MAIN SECTION ==================================*/
+
+
 /* GRID STYLING */
 
 main{
     padding-top: 4rem;
-    height: 100%;
+    height: auto;
     width: auto;
-    padding-bottom: 23rem;
 }
 
 .img{
@@ -259,6 +271,8 @@ article{
     margin-top: 2rem;
 }
 
+
+
 /* Map Section */
 
 .map{
@@ -325,6 +339,7 @@ article{
 }
 
 
+
 /*Languages Section */
 
 .languages h2{
@@ -345,5 +360,24 @@ article{
 .github{
     padding: 0;
     border-radius: 30px;
+}
+
+
+
+
+/*================================== PROJECTS PAGE ==================================*/
+
+.grid-container-projects{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 42%);
+    height: 100%;
+    width: 100%; 
+    overflow: hidden;
+}
+
+#project-page{
+    overflow: hidden;
 }
 
