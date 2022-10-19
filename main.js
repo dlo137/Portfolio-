@@ -30,7 +30,7 @@ switchElement.addEventListener('click', () =>{
     }
 })
 
-
+//Switches Pages
 window.onload = () => {
     const tab_switchers = document.querySelectorAll('[data-switcher');
 
@@ -48,7 +48,7 @@ window.onload = () => {
     }
 
 }
-
+//Switches Pages
 function Switchpage (page_id){
     const current_page = document.querySelector('.pages .page.active');
     current_page.classList.remove('active');
@@ -58,4 +58,17 @@ function Switchpage (page_id){
 
 }
 
+
+//Send Email function
+Email.send({
+    Host : "smtp.yourisp.com",
+    Username : "dangelo.watson1212@gmail.com",
+    Password : "Jaida137#!",
+    To : 'dangelo.watson1212@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
 
